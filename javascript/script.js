@@ -19,7 +19,10 @@ createApp({
             this.email = resp.data.response;                            
             })
         }
-    }
+    },
     
+    created(){
+        this.getEmails()
+    }
    
 }).mount('#app')
